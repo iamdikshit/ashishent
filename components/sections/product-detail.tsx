@@ -7,16 +7,35 @@ import Image from "next/image";
 
 const tabs = ["Overview", "Specifications", "Applications"];
 
-export default function ProductDetail(productDetail: { data: string | never[]; }) {
+type Product = {
+    id: string;
+    name: string;
+    tagline: string;
+    tag: string;
+    tagColor: string;
+    category: string;
+    description: string;
+    longDescription: string;
+    applications: string[];
+    specifications: { label: string; value: string }[];
+    features: string[];
+    moq: string;
+    leadTime: string;
+    origin: string;
+    icon: React.ReactNode;
+    gradient: string;
+};
+
+type ProductDetailProps = {
+    data: Product;
+};
+
+export default function ProductDetail({data}:ProductDetailProps) {
 
     const [activeTab, setActiveTab] = useState("Overview");
-    if(productDetail?.data.length == 0) {
-        return <NoProduct/>;
-    }
-    console.log(productDetail?.data[0]);
 
 
-    const product = productDetail?.data[0]
+    const product= data
 
 
     return (
