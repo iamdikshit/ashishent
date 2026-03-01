@@ -188,9 +188,9 @@ export default function Footer() {
                     </svg>
                   </span>
                                     <span className="leading-relaxed">
-                    123 Innovation Drive,<br />
-                    Suite 400, San Francisco,<br />
-                    CA 94107, USA
+                    Delhi<br />
+                    <br />
+
                   </span>
                                 </div>
                             </li>
