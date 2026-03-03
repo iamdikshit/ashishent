@@ -124,7 +124,7 @@ export default function buildUserEmail(data: {
     <!-- CTA -->
     <div class="cta-wrap">
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}/product" class="cta-btn">🧵 &nbsp; Explore Our Products</a>
-      <a href="https://wa.me/919876543210" class="cta-secondary">💬 WhatsApp Us</a>
+      <a href="https://wa.me/+91 99583 94954" class="cta-secondary">💬 WhatsApp Us</a>
     </div>
 
     <!-- Contact strip -->
