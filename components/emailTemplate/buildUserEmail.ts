@@ -83,18 +83,10 @@ export default function buildUserEmail(data: {
   <div class="header">
     <div class="dot-bg"></div>
     <div class="logo-wrap">
-      <div class="logo-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-        </svg>
-      </div>
-      <span class="logo-text">Ashish Enterprises<span class="logo-dot">.</span></span>
+      
+      <span class="logo-text">Ashish Enterprises</span>
     </div>
-    <div class="check-circle" style="margin:0 auto 20px">
-      <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
-      </svg>
-    </div>
+   
     <div class="h-title">Inquiry Received!</div>
     <p class="h-sub">Thank you for reaching out to us.<br/>We'll get back to you within 24 hours.</p>
   </div>
@@ -139,11 +131,11 @@ export default function buildUserEmail(data: {
     <div class="contact-strip">
       <p>Need immediate assistance? Reach us directly:</p>
       <div class="contact-links">
-        <a href="tel:+919876543210" class="contact-link">📞 +91 98765 43210</a>
-        <br/>
-        <a href="mailto:hello@ashishenterprises.com" class="contact-link">📧 hello@ashishenterprises.com</a>
-          <br/>
-        <a href="https://wa.me/919876543210" class="contact-link">💬 WhatsApp</a>
+      
+        
+        <a href="mailto:info@ashishent.com" class="contact-link">📧 info@ashishent.com</a>
+          
+      
       </div>
     </div>
   </div>
@@ -151,21 +143,20 @@ export default function buildUserEmail(data: {
   <!-- Footer -->
   <div class="footer">
     <div class="f-logo">Ashish Enterprises<span>.</span></div>
-    <div class="f-tag">Premium Textile Importer · Est. 2009 · Delhi, India</div>
+    <div class="f-tag">B-72, 2nd floor, Sector-69, Noida, UP-201301</div>
     <div class="f-links">
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}" class="f-link">Website</a>
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}/product" class="f-link">Products</a>
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}/contact" class="f-link">Contact</a>
     </div>
     <div class="f-contact">
-      📍 Gandhi Nagar, Delhi – 110031, India<br/>
-      📞 <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp;
-      📧 <a href="mailto:hello@ashishenterprises.com">hello@ashishenterprises.com</a>
+  
+      📧 <a href="mailto:info@ashishent.com">info@ashishent.com</a>
     </div>
     <div class="f-divider"></div>
     <div class="f-fine">
       You are receiving this email because you submitted an inquiry on our website.<br/>
-      If this wasn't you, please ignore this email or <a href="mailto:hello@ashishenterprises.com" style="color:#818cf8">contact us</a>.<br/><br/>
+      If this wasn't you, please ignore this email or <a href="mailto:info@ashishent.com" style="color:#818cf8">contact us</a>.<br/><br/>
       © ${new Date().getFullYear()} Ashish Enterprises. All rights reserved.
     </div>
   </div>

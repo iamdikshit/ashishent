@@ -83,12 +83,12 @@ export default function buildTeamEmail(data: {
   <div class="header">
     <div class="dot-bg"></div>
     <div class="logo-wrap">
-      <div class="logo-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-        </svg>
-      </div>
-      <span class="logo-text">Ashish Enterprises<span class="logo-dot">.</span></span>
+<!--      <div class="logo-icon">-->
+<!--        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">-->
+<!--          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>-->
+<!--        </svg>-->
+<!--      </div>-->
+      <span class="logo-text">Ashish Enterprises</span>
     </div>
     <div><div class="badge"><div class="badge-dot"></div><span class="badge-text">New Inquiry Received</span></div></div>
     <div class="h-title">You've received a new<br/>product inquiry 📦</div>
@@ -148,16 +148,15 @@ export default function buildTeamEmail(data: {
   <!-- Footer -->
   <div class="footer">
     <div class="f-logo">Ashish Enterprises<span>.</span></div>
-    <div class="f-tag">Premium Textile Importer · Est. 2020 · Delhi, India</div>
+    <div class="f-tag">B-72, 2nd floor, Sector-69, Noida, UP-201301</div>
     <div class="f-links">
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}" class="f-link">Website</a>
-      <a href="${process.env.NEXT_PUBLIC_SITE_URL}/products" class="f-link">Products</a>
+      <a href="${process.env.NEXT_PUBLIC_SITE_URL}/product" class="f-link">Products</a>
       <a href="${process.env.NEXT_PUBLIC_SITE_URL}/contact" class="f-link">Contact</a>
     </div>
     <div class="f-contact">
-      📍 Gandhi Nagar, Delhi – 110031, India<br/>
-      📞 <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp;
-      📧 <a href="mailto:hello@ashishenterprises.com">hello@ashishenterprises.com</a>
+     
+      📧 <a href="mailto:info@ashishent.com">info@ashishent.com</a>
     </div>
     <div class="f-divider"></div>
     <div class="f-fine">This is an automated notification. Do not reply directly to this email.<br/>© ${new Date().getFullYear()} Ashish Enterprises. All rights reserved.</div>
