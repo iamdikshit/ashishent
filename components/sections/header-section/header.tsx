@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
+import Logo from "@/components/ui/logo";
 const navLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -42,15 +42,13 @@ export default function Header() {
                 <div className="flex items-center justify-between h-16 md:h-20">
 
                     {/* Logo */}
-                    <Link
-                        href="/"
-                        className="flex items-center gap-2 group flex-shrink-0 "
-                    >
-                        <Image src={"/images/logo/logo1.png"} alt={"Logo"}
-                               width={150}
-                               height={50}
-                        />
-                    </Link>
+
+                        {/*<Image src={"/images/logo/logo1.png"} alt={"Logo"}*/}
+                        {/*       width={150}*/}
+                        {/*       height={50}*/}
+                        {/*/>*/}
+                        <Logo/>
+
 
                     {/* Desktop Nav Links */}
                     <ul className="hidden md:flex items-center gap-1">

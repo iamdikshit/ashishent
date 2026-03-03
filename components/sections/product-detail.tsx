@@ -22,6 +22,7 @@ type Product = {
     moq: string;
     leadTime: string;
     origin: string;
+    imageUrl: string;
     icon: React.ReactNode;
     gradient: string;
 };
@@ -82,8 +83,8 @@ export default function ProductDetail({data}:ProductDetailProps) {
                             {/* 1. Background image — bottom layer */}
                             <Image
                                 className="absolute inset-0 w-full h-full object-cover"
-                                src="/images/carpet.jpg"
-                                alt="carpet"
+                                src={product.imageUrl}
+                                alt={product.name}
                                 width={600}
                                 height={400}
                             />

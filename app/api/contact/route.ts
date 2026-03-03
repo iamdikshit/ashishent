@@ -186,7 +186,7 @@ export async function POST(req: NextRequest) {
         await Promise.all([
             // Team notification
             transporter.sendMail({
-                from: `"Ashish Enterprises Website" <${process.env.SMTP_USER}>`,
+                from: `"Ashish Enterprises" <${process.env.SMTP_USER}>`,
                 to: process.env.TEAM_EMAIL || process.env.SMTP_USER,
                 replyTo: emailData.email,
                 subject: `New Inquiry from ${emailData.name} – ${emailData.product || "General"} [#${refId}]`,

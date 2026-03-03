@@ -42,6 +42,7 @@ const productData = [
         leadTime: "10 – 20 business days",
         origin: "Asia",
         gradient: "from-blue-600 to-sky-600",
+        imageUrl:"/images/bg.jpg",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10" />
@@ -90,6 +91,7 @@ const productData = [
         leadTime: "20 – 35 business days",
         origin: "China",
         gradient: "from-red-600 to-rose-600",
+        imageUrl:"/images/carpet.jpg",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zm12-1a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
@@ -141,6 +143,7 @@ const productData = [
         leadTime: "15 – 30 business days",
         origin: "China / South-East Asia",
         gradient: "from-indigo-600 to-violet-600",
+        imageUrl:"/images/knit-fabrics.jpg",
         icon: (
             <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18" />
@@ -189,6 +192,7 @@ const productData = [
         leadTime: "15 – 30 business days",
         origin: "China / South-East Asia",
         gradient: "from-purple-600 to-fuchsia-600",
+        imageUrl:"/images/woven.jpg",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18" />
@@ -238,6 +242,7 @@ const productData = [
         leadTime: "15 – 25 business days",
         origin: "Asia",
         gradient: "from-emerald-600 to-green-600",
+        imageUrl:"/images/knit-fabrics.jpg",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -287,9 +292,118 @@ const productData = [
         leadTime: "20 – 35 business days",
         origin: "China / South-East Asia",
         gradient: "from-amber-600 to-orange-600",
+        imageUrl:"/images/knit-fabrics.jpg",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+        ),
+    },
+
+    {
+        id: "pvc-coated-fabric-importer",
+        name: "PVC Coated Fabric",
+        tagline: "Heavy-duty waterproof fabric for industrial & outdoor use",
+        tag: "Industrial Grade",
+        tagColor: "bg-cyan-50 text-cyan-600 border-cyan-200",
+        category: "Coated Fabrics",
+        description:
+            "High-strength PVC coated fabric imported in bulk for waterproof, outdoor, and industrial applications requiring durability and weather resistance.",
+        longDescription:
+            "Ashish Enterprises is a trusted PVC coated fabric importer in India, supplying heavy-duty waterproof fabrics for industrial, commercial, and outdoor applications. Our PVC coated fabrics are manufactured using premium polyester base fabric coated with high-quality polyvinyl chloride for enhanced durability, water resistance, and UV stability. These fabrics are widely used in truck covers, tents, tarpaulins, awnings, and protective industrial covers. We offer bulk supply with customizable thickness, GSM, and color options to meet diverse business requirements.",
+        applications: [
+            "Truck & Trailer Covers",
+            "Tarpaulins & Tents",
+            "Industrial Covers",
+            "Outdoor Awnings",
+            "Inflatable Structures",
+            "Warehouse & Storage Covers"
+        ],
+        specifications: [
+            { label: "Base Material", value: "Polyester Fabric with PVC Coating" },
+            { label: "Fabric Weight", value: "300 – 900 GSM" },
+            { label: "Width", value: '48\" – 80\"' },
+            { label: "Water Resistance", value: "100% Waterproof" },
+            { label: "Finish", value: "UV Resistant / Flame Retardant (Optional)" },
+            { label: "Thickness", value: "Customizable" },
+            { label: "Packaging", value: "Roll Packing" },
+            { label: "Country of Origin", value: "China / South-East Asia" },
+        ],
+        features: [
+            "Excellent waterproof performance",
+            "High tensile strength & tear resistance",
+            "UV and weather resistant",
+            "Suitable for heavy-duty outdoor use",
+            "Long service life",
+            "Available in bulk wholesale quantities"
+        ],
+        moq: "1000 meters per colour",
+        leadTime: "20 – 35 business days",
+        origin: "China / South-East Asia",
+        gradient: "from-cyan-600 to-blue-600",
+        imageUrl:"/images/pvcCoated.jpg",
+        icon: (
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+        ),
+    },
+
+    {
+        id: "pu-fabric-wholesale-supplier",
+        name: "PU Fabric",
+        tagline: "Premium synthetic leather alternative for fashion & upholstery",
+        tag: "High Demand",
+        tagColor: "bg-rose-50 text-rose-600 border-rose-200",
+        category: "Coated & Synthetic Fabrics",
+        description:
+            "High-quality PU fabric imported in bulk, offering leather-like appearance, flexibility, and durability for upholstery, fashion, and automotive use.",
+        longDescription:
+            "Ashish Enterprises is a leading PU fabric importer and wholesale supplier in India, delivering premium synthetic leather materials for various industries. PU (Polyurethane) fabric is widely used as a cost-effective and eco-friendly alternative to genuine leather. Our PU fabrics offer excellent flexibility, smooth texture, abrasion resistance, and modern aesthetic appeal. Available in multiple finishes including matte, glossy, embossed, and textured designs, our PU fabric is ideal for furniture, automotive interiors, handbags, footwear, and fashion accessories. We ensure competitive bulk pricing, consistent quality, and reliable import logistics.",
+        applications: [
+            "Sofa & Furniture Upholstery",
+            "Automotive Seat Covers",
+            "Handbags & Accessories",
+            "Footwear Manufacturing",
+            "Fashion Garments",
+            "Interior Design Projects"
+        ],
+        specifications: [
+            { label: "Material", value: "Polyurethane Coated Fabric" },
+            { label: "Base Fabric", value: "Polyester / Cotton Base" },
+            { label: "Thickness", value: "0.5 – 2.0 mm" },
+            { label: "Width", value: '54\" – 60\"' },
+            { label: "Finish", value: "Matte / Glossy / Embossed / Textured" },
+            { label: "Abrasion Resistance", value: "High Durability" },
+            { label: "Packaging", value: "Roll Packing" },
+            { label: "Country of Origin", value: "China / South-East Asia" },
+        ],
+        features: [
+            "Leather-like appearance and feel",
+            "Flexible and easy to stitch",
+            "Water-resistant surface",
+            "Abrasion and scratch resistant",
+            "Wide variety of colours and textures",
+            "Bulk supply for manufacturers & wholesalers"
+        ],
+        moq: "800 meters per design",
+        leadTime: "20 – 35 business days",
+        origin: "China / South-East Asia",
+        gradient: "from-rose-600 to-pink-600",
+        imageUrl:"/images/puCoated.jpeg",
+        icon: (
+            <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.8}
+            >
+                <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 7h16M4 12h16M4 17h10"
+                />
             </svg>
         ),
     }

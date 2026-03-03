@@ -10,14 +10,16 @@ const products = [
     "NR Knitted Fabrics",
     "Pile Knitted Fabrics",
     "Other / Custom Requirement",
+    "PVC coated fabric",
+    "PU fabric"
 ];
 
 const contactInfo = [
     {
         label: "Email Us",
-        value: "hello@ashishenterprises.com",
+        value: "info@ashishent.com",
         sub: "We reply within 24 hours",
-        href: "mailto:hello@ashishenterprises.com",
+        href: "mailto:info@ashishent.com",
         icon: (
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -26,7 +28,7 @@ const contactInfo = [
     },
     {
         label: "Call Us",
-        value: "+91 98765 43210",
+        value: "+91 9958394954",
         sub: "Mon – Sat, 9 AM – 7 PM",
         href: "tel:+919876543210",
         icon: (
@@ -37,15 +39,16 @@ const contactInfo = [
     },
     {
         label: "Visit Us",
-        value: "Gandhi Nagar, Delhi – 110031",
+        value: "B-72, 2nd floor, Sector-69, Noida, UP-201301",
         sub: "India's largest textile market",
-        href: "https://maps.google.com",
+
         icon: (
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
         ),
+
     },
 ];
 
@@ -174,19 +177,36 @@ export default function ContactUs() {
                     {/* ── Left sidebar ── */}
                     <div className="lg:col-span-2 space-y-4">
                         {contactInfo.map((info) => (
-                            <a key={info.label} href={info.href}
-                               target={info.href.startsWith("http") ? "_blank" : undefined}
-                               rel="noopener noreferrer"
-                               className="group flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-200 hover:bg-white hover:shadow-lg hover:shadow-indigo-50 hover:-translate-y-0.5 transition-all duration-300">
-                                <div className="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-all duration-300">
-                                    {info.icon}
+                            info.href ? (
+                                <a key={info.label} href={info.href}
+                                   target={info.href.startsWith("http") ? "_blank" : undefined}
+                                   rel="noopener noreferrer"
+                                   className="group flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-200 hover:bg-white hover:shadow-lg hover:shadow-indigo-50 hover:-translate-y-0.5 transition-all duration-300">
+                                    <div className="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-all duration-300">
+                                        {info.icon}
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold text-indigo-500 uppercase tracking-widest mb-1">{info.label}</p>
+                                        <p className="text-sm font-semibold text-slate-800 group-hover:text-indigo-700 transition-colors">{info.value}</p>
+                                        <p className="text-xs text-slate-400 mt-0.5">{info.sub}</p>
+                                    </div>
+                                </a>
+                            ) : (
+                                <div key={info.label}
+
+                                   rel="noopener noreferrer"
+                                   className="group flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-200 hover:bg-white hover:shadow-lg hover:shadow-indigo-50 hover:-translate-y-0.5 transition-all duration-300">
+                                    <div className="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-all duration-300">
+                                        {info.icon}
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-semibold text-indigo-500 uppercase tracking-widest mb-1">{info.label}</p>
+                                        <p className="text-sm font-semibold text-slate-800 group-hover:text-indigo-700 transition-colors">{info.value}</p>
+                                        <p className="text-xs text-slate-400 mt-0.5">{info.sub}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-xs font-semibold text-indigo-500 uppercase tracking-widest mb-1">{info.label}</p>
-                                    <p className="text-sm font-semibold text-slate-800 group-hover:text-indigo-700 transition-colors">{info.value}</p>
-                                    <p className="text-xs text-slate-400 mt-0.5">{info.sub}</p>
-                                </div>
-                            </a>
+                            )
+
                         ))}
 
                         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
@@ -229,7 +249,7 @@ export default function ContactUs() {
                                         </div>
                                         <h3 className="text-2xl font-bold text-slate-900">Message Sent!</h3>
                                         <p className="text-slate-500 text-sm max-w-sm leading-relaxed">
-                                            Thank you! We've sent a confirmation email to your inbox. Our team will respond within 24 business hours.
+                                            Thank you! We have sent a confirmation email to your inbox. Our team will respond within 24 business hours.
                                         </p>
                                         {refId && (
                                             <div className="bg-indigo-50 border border-indigo-200 rounded-xl px-6 py-3.5 text-center">
