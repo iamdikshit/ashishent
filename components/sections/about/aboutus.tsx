@@ -163,8 +163,8 @@ export default function AboutUs() {
                                 {/* Top gradient bar */}
                                 <div className="h-2 w-full bg-gradient-to-r from-indigo-600 via-violet-500 to-indigo-400" />
 
-                                <div className="p-8">
-                                    <Image src={"/images/logo/aelogoblue.png"} alt={"Ashish Enterprises"} width={600} height={600} />
+                                <div className="">
+                                    <Image src={"/images/carpet2.jpg"} alt={"Ashish Enterprises"} width={600} height={600} />
                                 </div>
                             </div>
 
