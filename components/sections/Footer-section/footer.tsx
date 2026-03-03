@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import productDetail from "@/data/product-detail";
 import Logo from "@/components/ui/logo";
 const quickLinks = [
@@ -12,9 +12,9 @@ const quickLinks = [
 
 
 
-
 export default function Footer() {
-    const products = productDetail.map(product => ({label: product.name, href: product.id}));
+    const products = [0,1,2,3].map(index => ({label: productDetail[index].name, href: productDetail[index].id}));
+
     const currentYear = new Date().getFullYear();
 
     return (
@@ -81,6 +81,7 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-2.5">
                             {products.map((product) => (
+
                                 <li key={product.href}>
                                     <Link
                                         href={`/product/${product.href}`}
@@ -91,6 +92,15 @@ export default function Footer() {
                                     </Link>
                                 </li>
                             ))}
+                            <li >
+                                <Link
+                                    href={`/product`}
+                                    className="group flex items-center gap-2 text-sm text-slate-400 hover:text-indigo-400 transition-colors duration-150"
+                                >
+                                    <span className="w-1 h-1 rounded-full bg-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
+                                    More...
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
