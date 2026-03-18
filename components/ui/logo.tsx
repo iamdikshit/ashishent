@@ -43,7 +43,7 @@ const sizeConfig: Record<LogoSize, {
         tagline: "text-[10px]",
     },
     xl: {
-        icon: 80,
+        icon:96,
         ashish: "text-[52px]",
         enterprises: "text-[17px] tracking-[0.35em]",
         gap: "gap-5",
@@ -97,37 +97,37 @@ export default function Logo({
       </span>
 
             {/* ── Text Stack ── */}
-            <span className="flex flex-col leading-none">
-        {/* ASHISH */}
-                <span
-                    className={`font-black uppercase ${s.ashish} ${v.ashish}`}
-                    style={{
-                        fontFamily: "'Barlow Condensed', 'Arial Black', sans-serif",
-                        letterSpacing: "0.06em",
-                    }}
-                >
-          ASHISH
-        </span>
+        {/*    <span className="flex flex-col leading-none">*/}
+        {/*/!* ASHISH *!/*/}
+        {/*        <span*/}
+        {/*            className={`font-black uppercase ${s.ashish} ${v.ashish}`}*/}
+        {/*            style={{*/}
+        {/*                fontFamily: "'Barlow Condensed', 'Arial Black', sans-serif",*/}
+        {/*                letterSpacing: "0.06em",*/}
+        {/*            }}*/}
+        {/*        >*/}
+        {/*  ASHISH*/}
+        {/*</span>*/}
 
                 {/* ENTERPRISES */}
-                <span
-                    className={`font-bold uppercase ${s.enterprises} ${v.enterprises} mt-0.5`}
-                    style={{
-                        fontFamily: "'Barlow Condensed', 'Arial Black', sans-serif",
-                    }}
-                >
-          ENTERPRISES
-        </span>
+        {/*        <span*/}
+        {/*            className={`font-bold uppercase ${s.enterprises} ${v.enterprises} mt-0.5`}*/}
+        {/*            style={{*/}
+        {/*                fontFamily: "'Barlow Condensed', 'Arial Black', sans-serif",*/}
+        {/*            }}*/}
+        {/*        >*/}
+        {/*  ENTERPRISES*/}
+        {/*</span>*/}
 
                 {/* Optional tagline */}
-                {showTagline && (
-                    <span
-                        className={`${s.tagline} ${v.tagline} mt-1 font-medium tracking-wide`}
-                    >
-            Premium Textile Importer
-          </span>
-                )}
-      </span>
+          {/*      {showTagline && (*/}
+          {/*          <span*/}
+          {/*              className={`${s.tagline} ${v.tagline} mt-1 font-medium tracking-wide`}*/}
+          {/*          >*/}
+          {/*  Premium Textile Importer*/}
+          {/*</span>*/}
+          {/*      )}*/}
+      {/*</span>*/}
     </span>
     );
 

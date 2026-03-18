@@ -296,7 +296,7 @@ export default function ContactUs() {
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                             <div>
                                                 <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Full Name <span className="text-red-400">*</span></label>
-                                                <input type="text" name="name" placeholder="Rahul Sharma" value={form.name} onChange={handleChange} onBlur={handleBlur} className={fieldClass("name")} />
+                                                <input type="text" name="name" placeholder="Your name" value={form.name} onChange={handleChange} onBlur={handleBlur} className={fieldClass("name")} />
                                                 {touched.name && errors.name && <p className="mt-1.5 text-xs text-red-500 flex items-center gap-1"><ErrIcon />{errors.name}</p>}
                                             </div>
                                             <div>

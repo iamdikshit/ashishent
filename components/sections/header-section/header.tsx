@@ -47,7 +47,7 @@ export default function Header() {
                         {/*       width={150}*/}
                         {/*       height={50}*/}
                         {/*/>*/}
-                        <Logo/>
+                        <Logo size={"xl"}/>
 
 
                     {/* Desktop Nav Links */}

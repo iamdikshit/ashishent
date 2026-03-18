@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className="sm:col-span-2 lg:col-span-1">
                         {/* Logo */}
 
-                            <Logo variant={"white"}/>
+                            <Logo size={"xl"} variant={"white"}/>
 
 
                         <p className="text-sm text-slate-400 leading-relaxed mb-6">
